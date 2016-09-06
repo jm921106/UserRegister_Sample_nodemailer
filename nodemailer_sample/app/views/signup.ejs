@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title%></title>
+    <!--<link rel='stylesheet' href='../../public/stylesheets/style.css' />-->
+</head>
+<body>
+    <% for(var i in messages) {%>
+        <div class="flash"><%= messages[i]%></div>
+    <% } %>
+    <br/>
+    <form action="/signup" method="post">
+        <div>
+            <label>First Name : </label>
+            <input type="text" name="firstName" value="Heo"/>
+        </div>
+        <br/>
+        <div>
+            <label>Last Name : </label>
+            <input type="text" name="lastName" value="JM"/>
+        </div>
+        <br/>
+        <div>
+            <label>Email : </label>
+            <input type="text" name="email" value="jm921106@naver.com"/>
+        </div>
+        <br/>
+        <div>
+            <label>UserName : </label>
+            <input type="text" name="username" />
+        </div>
+        <br/>
+        <div>
+            <label>Password : </label>
+            <input type="password" name="password" value="wjdans92"/>
+        </div>
+        <br/>
+        <div>
+            <input type="submit" value="Sign Up !" />
+        </div>
+    </form>
+
+</body>
+</html>

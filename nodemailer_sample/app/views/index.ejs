@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!--<link rel='stylesheet' href='../../public/stylesheets/style.css' />-->
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>This is nodemailer sample page</p>
+
+  <% if(userFullName) {%>
+    <h2>Hello <%= userFullName%></h2>
+    <a href="/signout">Sign Out !</a>
+    <br/>
+
+    <a href="/goToMain">Go To Main !</a>
+    <br/>
+
+    <form action="/sendMail" post="get">
+      <input type="submit" value="인증 mail 보내기">
+    </form>
+
+  <% } else { %>
+    <a href="/signup">Sign Up !</a>
+    <a href="/signin">Sign In !</a>
+  <% } %>
+  </body>
+</html>

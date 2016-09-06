@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title%></title>
+    <!--<link rel='stylesheet' href='../../public/stylesheets/style.css' />-->
+</head>
+<body>
+<% for(var i in messages) {%>
+<div class="flash"><%= messages[i]%></div>
+<% } %>
+<br/>
+<form action="/signin" method="post">
+    <div>
+        <label>Username : </label>
+        <input type="text" name="username" />
+    </div>
+    <br/>
+    <div>
+        <label>Password : </label>
+        <input type="password" name="password" />
+    </div>
+    <br/>
+    <div>
+        <input type="submit" value="Sign Ip !" />
+    </div>
+</form>
+</body>
+</html>
